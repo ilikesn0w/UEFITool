@@ -133,7 +133,7 @@ jobs:
         with:
           operating_system: freebsd
           version: '13.3'
-          shell: cpa.sh {0}
+          shell: cpa.sh
           run: |
             sudo pkg install -y zip cmake qt6-base
             mkdir dist
