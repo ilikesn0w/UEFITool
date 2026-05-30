@@ -136,6 +136,7 @@ jobs:
       - name: Build
         shell: cpa.sh {0}
         run: |
+            sh << 'EOF'
             set -e
             sudo pkg install -y zip cmake qt6-base
             mkdir dist
